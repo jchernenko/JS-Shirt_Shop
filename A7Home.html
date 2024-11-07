@@ -1,0 +1,117 @@
+<!-- Jeff Chernenko | A00745858 | COMP 2132 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Tab Title -->
+        <title>A7 | Home</title>
+
+        <!-- External Style Sheet CSS - Base and Reset -->
+        <link rel="stylesheet" href="css/a7_base.css">
+	    <link rel="stylesheet" href="css/a7_reset.css">
+
+        <!-- External Style Sheet Link for Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+        <!-- External JavaScript & JQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="js/script.js" defer="defer"></script>
+
+    </head>
+
+    <body>
+
+        <!-- Header Section & Navigation Bar -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="A7Home.html" class="active" target="_self">Home</a></li>
+                 </ul>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+
+            <!-- Page Title -->
+            <div id="title">
+                <h1>Assignment 7</h1>
+            </div>
+
+
+            <!-- Container 1 -->
+            <div class="container">
+
+                <!-- Tile 1 -->
+                <div class="product">
+
+                    <div class="product-image">
+
+                        <input type="radio" name="images" id="main-image"/>
+	                    <label for="main-image"><img src="product-images/t-shirt-black-front.jpg" alt="Product Image" width="387" height="507" /></label><br>
+
+                        <input type="radio" name="images" id="thumb1"/>
+	                    <label for="thumb1"><img class="thumbnail" src="product-images/t-shirt-black-no-model.jpg" alt="Thumbnail1" /></label>
+
+                        <input type="radio" name="images" id="thumb2"/>
+                        <label for="thumb2"><img class="thumbnail" src="product-images/t-shirt-black-front.jpg" alt="Thumbnail2" /></label>
+	
+	                    <input type="radio" name="images" id="thumb3"/>
+	                    <label for="thumb3"><img class="thumbnail" src="product-images/t-shirt-black-back.jpg" alt="Thumbnail3" /></label>
+
+
+                    </div> <!--product-image-->
+                    
+
+                    <div id="form-container">
+
+
+                        <form id="a7Form" action="thank-you.html" method="post">
+
+                            <div id="price-container">
+                                <label><strong>Price: </strong>$<span id="price">20.00</span></label><br>
+                                <label>Qty:</label> 
+                                <input type="button" name="subtract" id="subtract" value="-"></input>
+                                <input type="text" name="qty" id="qty" value="1"></input>
+                                <input type="button" name="add" id="add" value="+"></input><br>
+                                <label><strong>Total Price: </strong>$<span id="total">20.00</span></label>
+                            </div> <!--price-container-->
+                            
+                            <div id="color-container">
+                                <label for="color"></label><br><br>
+                                <input type="radio" id="black" name="color" value="black" checked/><label for="black">Black</label><br>
+                                <input type="radio" id="red" name="color" value="red" /><label for="red">Red</label><br>
+                                <input type="radio" id="grey" name="color" value="grey" /><label for="grey">Grey</label><br>
+                            </div> <!--color-container-->
+                            
+                            <div id="size-container">
+                                <label for="size"></label><br><br>
+                                <input type="radio" id="small" name="size" value="small" /><label for="small">Small</label><br>
+                                <input type="radio" id="medium" name="size" value="medium" /><label for="medium">Medium</label><br>
+                                <input type="radio" id="large" name="size" value="large" /><label for="large">Large</label><br>
+                            </div> <!--size-container-->
+                            
+                            <div id="add-to-cart">
+                                <input id="submit-btn" type="submit" value="Choose A Size" disabled>
+                            </div> <!--add-to-cart-->
+
+                        </form>
+                        
+                    </div> <!--form-container-->
+                </div> <!--product-->
+            </div> <!--container-->
+        </div> <!--wrapper-->
+
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-content">
+                <p>&copy; J.Chernenko A00745858 | COMP2132 Assignment 7 | All Rights Reserved.</p>
+            </div> <!--footer-content-->
+        </footer>
+    </body>
+</html>

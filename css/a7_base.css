@@ -1,0 +1,327 @@
+/*-- Jeff Chernenko | A00745858 | COMP 2132 */
+
+
+/* Styling for header and navigation */
+
+body {
+	font-family: 'Inter', sans-serif;
+	min-width: 350px;
+}
+  
+header {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+  
+nav ul {
+	display: flex;
+	gap: 20px;
+	list-style: none;
+	justify-content: flex-end;
+}
+  
+nav ul li a {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+}
+  
+nav ul li a:hover {
+	color: #0088cc;
+}
+  
+.active {
+	color: #0088cc;
+}
+  
+  
+
+  /* Styling for main page section */
+  
+.wrapper {
+	width: 100%;
+	background: rgba(0, 119, 128, 0.4);
+	text-align: center;
+	margin-top: 10px;
+}
+  
+#title {
+	padding: 25px;
+	font-size: 25px;
+	text-decoration: underline;
+}
+  
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+  
+.product {
+	display: flex;
+	width: 90%;
+	max-width: 800px;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+	min-width: 300px;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid #333;
+}
+  
+.product h2 {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 26px;
+}
+  
+.product h3 {
+	font-size: 20px;
+}
+  
+.product p {
+	font-size: 16px;
+}
+  
+.thumbnail {
+	width: 25%;
+	height: auto;
+	cursor: pointer;
+	border: 0.5px lightgray dotted;
+	border-radius: 10px;
+}
+  
+#form-container {
+	flex-basis: 35%;
+	padding-left: 20px;
+}
+
+#price-container {
+	line-height: 1.5;
+}
+  
+#price-container,
+#color-container,
+#size-container {
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px darkgray solid;
+	border-radius: 10px;
+}
+  
+#price-container input {
+	width: 25%;
+}
+  
+form {
+	text-align: left;
+	padding: 10px;
+	border: 3px solid darkgrey;
+	border-radius: 10px;
+	background-color: #f5f5f5;
+}
+  
+label {
+	margin-bottom: 5px;
+	font-family: 'Inter', sans-serif;
+}
+  
+input,
+select {
+	padding: 7px;
+	border: 1px solid white;
+	border-radius: 4px;
+	font-size: 14px;
+}
+  
+input[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	background-color: #555454;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+  
+#add,
+#subtract {
+	max-width: 12%;
+	border: 1px darkgrey dotted;
+}
+
+.product-image {
+	border: 3px solid darkgrey;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 5px;
+	flex-basis: 65%;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.product-image input[name='images'] {
+	display: none;
+}
+
+.product-image label img {
+	display: inline-block;
+}
+
+
+
+
+/* Styling for thank-you html */
+
+.wrapper2 {
+	display: grid;
+	width: 100%;
+	background: rgba(0, 119, 128, 0.2);
+	text-align: center;
+	margin-top: 10px;
+	justify-content: center;
+}
+
+.section {
+	padding: 25px 50px;
+}
+
+.tiles {
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+	width: 450px;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+
+
+
+/* Styling for footer section */
+
+footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+.footer-content {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+
+
+
+
+/* Styling for media queries */
+
+@media only screen and (max-width: 1500px) {
+
+	 h1{
+		font-size: 40px;
+	 }
+
+	 .product h3 {
+		font-size: 22px;
+	 }
+}
+
+
+@media only screen and (max-width: 750px) {
+
+	.container {
+		padding: 15px;
+	}
+
+	 .product {
+		display: block;
+		flex-basis: 100%;
+	 }
+
+	 .product-image {
+		margin-bottom: 25px;
+	 }
+
+	 #form-container {
+		padding: 0;
+		flex-basis: 100%;
+	 }
+
+	 #price-container input {
+		width: 20%;
+	}
+
+	#add,
+	#subtract {
+		max-width: 30px;
+		border: 1px darkgrey dotted;
+	}
+
+}
+
+
+@media only screen and (max-width: 500px) {
+	
+	header {
+		display: block;
+		padding: 5px;
+	}
+  
+	nav ul {
+		display: block;
+		text-align: center;
+		padding: 5px;
+	}
+  
+	.active {
+		display: block;
+		align-items: center;
+	}
+  
+	nav ul li a {
+		display: block;
+		font-size: 20px;
+		width: 100%;
+		margin-bottom: 10px;
+		align-items: center;
+		padding: 2px;
+	}
+
+	h1 {
+		font-size: 30px;
+		margin-bottom: 40px;
+	}
+
+	 .product {
+		width: 300px;
+		margin: 0 auto;
+	 }
+
+	 .product h3 {
+		font-size: 18px;
+	 }
+
+	 .product p {
+		font-size: 16px;
+	 }
+
+	 footer p {
+		font-size: 12px;
+	 }
+}
